@@ -1,0 +1,27 @@
+### NOTE ####
+# -------------------------------------------------------------------------
+
+Make sure the data paths are referencing the correct datafile.
+for analysis, we saved .rds files, which is recommended for repeat analysis
+but changing 'rds' to 'csv' will call the provided datafile.
+
+
+NOTE: some differences in how data are stored lead to loss of information
+with csv saving and some columns will need to switched to appropriate formats
+
+e.g., date -> date = as.Date(date)  
++ some other instances of factors -> var = as.factor(var)
+
+Suggest making the appropriate data modifciations, saving as RDS and 
+reproducing the code with minimal alterations for easiest use of exploring.
+ this is not necessary for each step.
+ 
+ -----
+ Running the code: all inputs should be adequately provided to ensure you can run 
+  any script in any order. That said, best to run the scripts in numerical order,
+  starting with:
+    models
+    risk-assesment
+    new-figures
+    
+    
